@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>RecipeBox</title>
+    <link rel="icon" href="../assets/images/icons/recipebox.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/styles-grid-flex.css"/>
+</head>
+<body class="body-recipe-list">
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand fs-2 text-white" href="../index.html">RecipeBox</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+            <li class="nav-item">
+              <a class="nav-link fs-5 text-white" href="./recipeList.html">Recetas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-5 text-white" href="./about.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-5 text-white" href="./contact.html">Contacto</a>
+            </li>
+            <li class="nav-item dropdown">
+          </ul>
+          <form class="d-flex" role="search">
+            <div class="row no-gutters mt-3 align-items-center">
+              <div class="col d-flex align-items-center">
+                  <input class="form-control border-secondary rounded-pill pr-5" type="search" value="buscar" id="example-search-input2">
+              </div>
+              <div class="col-auto">
+                  <button class="btn btn-outline-light text-dark border-0 rounded-pill ml-n5" type="button">
+                      <i class="fa fa-search"></i>
+                  </button>
+              </div>
+          </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+      <main class="main-recipe-list">
+            <section id="filters-container">             
+                <div class="filter-search">
+                  <div class="intro-text">
+                    <h3>Busqueda Avanzada</h3>
+                  </div>
+                  <input type="text" id="recipe-name" placeholder="Buscar" class="form-control">
+                </div>               
+                <div class="filter ">
+                  <div>
+                    <h3 class="time-text ">Tiempo de Preparación</h3>
+                  </div> 
+                  <div class="btn-group-lg" role="group" aria-label="Basic radio toggle button group">
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off">
+                    <label class="btn btn-outline-dark" for="btnradio1">15'</label>
+                  
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                    <label class="btn btn-outline-dark" for="btnradio2">25'</label>
+                  
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                    <label class="btn btn-outline-dark" for="btnradio3">35'</label>
+
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+                    <label class="btn btn-outline-dark" for="btnradio4">35+'</label>
+                  </div>
+
+                </div>
+                <div class="filter">
+                  <div>
+                    <h3 class="ingredient-text">Ingrediente</h3>
+                  </div> 
+                  <select name="ingredient" id="select-ingredient" class="form-select">
+                    <option value="" disabled selected>Buscar Ingrediente</option>
+                    <option value="value1">Aceite de coco</option>
+                    <option value="value2">cebolla</option>
+                    <option value="value3">nabo</option>
+                  </select>
+                </div>
+                <div class="filter">
+                  <div>
+                    <h3 class="category-text">Categoria</h3>
+                  </div> 
+                  <select name="categoria" id="select-category" class="form-select">
+                    <option value="" disabled selected>Buscar Categoria</option>
+                    <option value="value1">Todas</option>
+                    <option value="value2">Cocina Basica</option>
+                    <option value="value3">Afrodisiaca</option>
+                    <option value="value3">Facil y Rapido</option>
+                  </select>
+                </div>
+                <div id="buttons-rl">
+                  <button type="reset" class="btn btn-outline-secondary m-2">Limpiar</button>
+                <button type="submit" class="btn btn-outline-secondary m-2">Buscar</button>
+              </div>
+            </section>
+            <section id="recipes-container-rl">
+              <div id="title-rl">
+              <h1>Recetas</h1>
+              <h4>Encuentra platos ricos y saludables a cargo de nuestros mejores chefs!</h4>
+            </div>
+              <div class="recipe-card-rl">
+                <a class="recipe-link" href="recipe.html">
+                  <p class="recipe-category rounded-top">A Pura Dulzura</p>
+                  <img src="../assets/images/Recetas/Galletas-de-maní-y-chocolate.jpg" alt="Galletas de maní y chocolate ">
+                  <p class="recipe-name rounded-bottom">Galletas de maní y chocolate </p>
+                </a>
+              </div>
+              <div class="recipe-card-rl">
+                <a class="recipe-link" href="recipeEmpanadasArabes.html">
+                  <p class="recipe-category rounded-top">Recetas Simples</p>
+                  <img src="../assets/images/Recetas/arabes.jpg" alt="Empanadas Arabes">
+                  <p class="recipe-name rounded-bottom">Empanadas Arabes</p>
+                </a>
+              </div>
+              <div class="recipe-card-rl">
+                <a class="recipe-link" href="recipePanCasero.html">
+                  <p class="recipe-category rounded-top">Recetas Simples</p>
+                  <img src="../assets/images/Recetas/pan-casero.jpg" alt="Pan Casero">
+                  <p class="recipe-name rounded-bottom">Pan Casero</p>
+                </a>
+              </div>
+              <div class="recipe-card-rl">
+                <a class="recipe-link" href="#">
+                  <p class="recipe-category rounded-top">Fácil y Rápido</p>
+                  <img src="../assets/images/Recetas/chocotorta-en-el-plato.jpg" alt="Chocotorta">
+                  <p class="recipe-name rounded-bottom">Chocotorta</p>
+                </a>
+              </div>
+              <div class="recipe-card-rl">
+                <a class="recipe-link" href="#">
+                  <p class="recipe-category rounded-top">Recetas Simples</p>
+                  <img src="../assets/images/Recetas/milanesa-napolitana.jpeg" alt="Milanesas a la napolitana">
+                  <p class="recipe-name rounded-bottom">Milanesa a la Napolitana</p>
+                </a>
+              </div>
+              <div class="recipe-card-rl">
+                <a class="recipe-link" href="#">
+                  <p class="recipe-category rounded-top">Invierno</p>
+                  <img src="../assets/images/Recetas/guiso-lentejas.jpg" alt="guiso de lentejas">
+                  <p class="recipe-name rounded-bottom">Guiso de Lentejas</p>
+                </a>
+              </div>
+              
+            </section>
+        </main>
+        
+        <footer class="text-center text-lg-start">
+          <div class="container d-flex justify-content-center py-5" style="background-color: #494747;">
+            <button type="button" class="btn btn-primary btn-lg rounded-circle mx-2" style="background-color: #54456b;">
+              <i class="bi bi-facebook"></i>
+            </button>
+            <button type="button" class="btn btn-primary btn-lg rounded-circle mx-2" style="background-color: #54456b;">
+              <i class="bi bi-youtube" ></i>
+            </button>
+            <button type="button" class="btn btn-primary btn-lg rounded-circle mx-2" style="background-color: #54456b;">
+              <i class="bi bi-instagram"></i>
+            </button>
+            <button type="button" class="btn btn-primary btn-lg rounded-circle mx-2" style="background-color: #54456b;">
+              <i class="bi bi-twitter"></i>
+            </button>
+          </div>
+      
+          <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2020 Copyright:
+            <a class="text-white">RecipeBox</a>
+          </div>
+        </footer>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    </body>
+</html>
