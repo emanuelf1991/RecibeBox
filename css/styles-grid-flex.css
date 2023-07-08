@@ -35,12 +35,16 @@ background-color: #494747;
 
 header{
   grid-area: header;
-  }
+ }
 
- .navbar{
-    background-color: #F96332;
-    height: 73px;
+.navbar{
+  background-color: #F96332;
+  height: 73px;
+}
 
+
+.navbar-collapse {
+  background-color: #F96332; 
 }
 
 
