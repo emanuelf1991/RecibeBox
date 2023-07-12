@@ -252,11 +252,11 @@ header{
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      height: 100vh;
       flex-basis: 70%;
       margin-bottom: 25vh;
       margin-top: 9vh;
     }
+
     #title-rl{
       display: flex;
       flex-direction: column;
@@ -348,16 +348,20 @@ margin-top: 10px;
       display:none;
     }
 
-    #recipes-container-rl{
+    /* #recipes-container-rl{
       position: relative;
       top: -40vh
+    } */
+
+    #recipes-container-rl{
+    margin: 8vw;
     }
-
-
   }
 
-  @media (max-width: 480px){
-
+  @media (max-width: 768px){
+    #recipes-container-rl{
+      margin: 0;
+      }
   }
 
   @media (max-width: 320px){
@@ -394,22 +398,24 @@ margin-top: 10px;
     .recipe-info{
       background-color:#F96332;
       display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
       margin-bottom: 50px;
+      width: 70vw;
+      height: 30vh;
     }
 
     #recipe-details{
       color: #2C2C2C;
       text-align: center;
-      flex-basis: 50%;
+      display: flex;
+      flex: 1;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
     }
 
     #recipe-image{
-       flex-basis: 50%; 
-      box-sizing: border-box;
+      flex: 1;
     }
 
     #recipe-image img {
@@ -482,20 +488,18 @@ margin-top: 10px;
           justify-items: center;
           }
 
+          
+      .recipe-info{
+        width: 100vw;
+        height: 30vh;
+      }
+
     }
 
     @media (max-width: 480px){
 
       #recipe-details{
         font-size: 0.9rem;
-      }
-
-      .recipe-info{
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 50px;
       }
 
       #instruction-list{
@@ -516,10 +520,10 @@ margin-top: 10px;
         }
 
 
-        #recipe-image{
+        /* #recipe-image{
         flex-basis: 50%;
         height: 25vh;
-      }
+      } */
     }
 
 
@@ -542,6 +546,7 @@ margin-top: 10px;
 
       .main-contact{
       grid-area: main-contact;
+      margin-top: 15vh;
       }
  /*------------------------------*/
 
@@ -573,13 +578,13 @@ margin-top: 10px;
   @media (max-width: 768px){
   .body-about{
     display: grid;
-    grid-template-columns: 1 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 0.3fr 3fr 3fr 0.5fr;
     grid-template-areas:
     "header"
     "main-about"
     "main-about"
-    "footer "
+    "footer"
     ;
     }
 
