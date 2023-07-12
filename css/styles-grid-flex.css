@@ -185,7 +185,7 @@ header{
 
   /* index media querys */
 
-  @media (max-width: 768px){
+  @media (max-width: 992px){
 
     .body-index{
       display: grid;
@@ -203,8 +203,10 @@ header{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        width: 500px;
-        margin-right: 300px;
+        width: 1000px;        
+        position: relative;
+        left: -160px;
+
       }
 
       .recipe-card {
@@ -348,10 +350,6 @@ margin-top: 10px;
       display:none;
     }
 
-    /* #recipes-container-rl{
-      position: relative;
-      top: -40vh
-    } */
 
     #recipes-container-rl{
     margin: 8vw;
