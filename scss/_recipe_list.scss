@@ -1,0 +1,163 @@
+
+  /* recipe-list css */
+
+  .body-recipe-list{
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr 1fr;
+    grid-template-rows: 0.2fr 3fr 3fr 0.5fr;
+    grid-template-areas:
+    "header header header header"
+    ". main-recipe-list main-recipe-list ."
+    ". main-recipe-list main-recipe-list ."
+    "footer footer footer footer"
+    ;
+    .main-recipe-list{
+        grid-area: main-recipe-list;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+
+        #filters-container{
+            flex-basis: 30%;
+            margin-top: 10vh;
+
+            .filter-search{
+                padding-left: 7rem;
+                margin-top: 2rem;
+            }
+            .filter{
+                padding-left: 7rem;
+                margin-top: 2rem;
+    
+                #select-ingredient{
+                    width: 85%;
+                    margin-top: 10px;
+                    }
+    
+                    #select-category{
+                        width: 85%;
+                        margin-top: 10px;
+                    }
+                }
+                #buttons-rl{
+                    display: flex;
+                    margin-left: 43%;
+                    padding: 1rem;
+                }
+                .mycheck{
+                    transform: scale(3.5);
+                    margin: 1rem;
+                  }
+            }
+
+            #recipes-container-rl{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                flex-basis: 70%;
+                margin-bottom: 25vh;
+                margin-top: 9vh;
+
+                #title-rl{
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 3vh;
+                }
+
+                .recipe-card-rl {
+                    width: calc(50% - 20px);
+                    margin: 10px;
+                    box-sizing: border-box;
+                    transition: transform 0.3s;
+                    &:hover {
+                        transform: scale(1.05); 
+                    }
+                    .recipe-link{                    
+                        text-decoration: none;
+                        font-family: Arial, sans-serif;
+                        font-weight: bold;
+                        color: whitesmoke;
+                        .recipe-category{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            text-align: center;
+                            justify-items: center;
+                            background-color: #F96332;
+                            text-decoration: none;
+                            margin-bottom: 0px;
+                            height: 40px;
+                        }
+                        img{
+                            display: flex;
+                            width: 100%;
+                            height: 200px;
+                            object-fit: cover;
+                            object-position: center;
+                            max-height: 200px;
+                        }
+                        .recipe-name{                           
+                            margin-top: 10px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            text-align: center;
+                            justify-items: center;
+                            margin-top: 0px;
+                            background-color: #2C2C2C;
+                            height: 70px;
+                        }    
+                    }
+                }
+            }
+
+        }
+
+
+        @media (max-width: 1500px){    
+              display: grid;
+              grid-template-columns: 1fr;
+              grid-template-rows: 0.2fr 3fr 3fr 0.5fr;
+              grid-template-areas:
+              "header"
+              "main-recipe-list"
+              "main-recipe-list"
+              "footer"
+              ;
+
+              .main-recipe-list{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                
+                .filter-search{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                    #recipe-name{
+                        margin-right: 15vw;
+                    }
+                }
+                .filter{
+                    display:none;
+                    }
+                    #buttons-rl{
+                        display:none;
+                    }
+                    #recipes-container-rl{
+                        margin: 8vw;
+                    }
+            }
+            
+
+        }
+
+        @media (max-width: 768px){
+            #recipes-container-rl{
+              margin: 0;
+            }
+        }
+    }
+
+

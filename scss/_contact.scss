@@ -1,0 +1,18 @@
+.body-contact{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: 0.3fr 3fr 3fr 0.5fr;
+    grid-template-areas:
+    "header header header "
+    ". main-contact ."
+    ". main-contact ."
+    "footer footer footer"
+    ;
+    .main-contact
+    {
+        grid-area: main-contact;
+        margin-top: 15vh;
+        }
+    }
+
+ 
