@@ -1,6 +1,6 @@
  /* index css */
 
- .body-index{
+ .body-index {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 0.2fr 3fr 3fr 0.5fr;
@@ -116,6 +116,8 @@
                 }
 
             }
+
+
             @media (max-width: 992px){
                
                   display: grid;
@@ -143,27 +145,21 @@
                     box-sizing: border-box;
                     justify-content: center;
                     justify-items: center;
-                }
             }
+        }
             
                  
-            
-                 
-            
+                   
               
             
-        }
+    }
 
-
-  
-
-  
-
+        
+        
+    
 
 
 //   /* index media querys */
-
-
 
 
   /*------------------------------*/
