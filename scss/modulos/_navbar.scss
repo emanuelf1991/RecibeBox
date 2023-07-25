@@ -1,14 +1,12 @@
-header{
+
+header {
     grid-area: header;
-    nav 
-    {
-        background-color: #F96332;
+    nav {
+        background-color: map-get($colores, naranja); 
         height: 73px;
 
         .navbar-collapse {
-          background-color: #F96332; 
+            background-color: map-get($colores, naranja); 
         }
-        
     }
-
 }

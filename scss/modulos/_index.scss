@@ -15,16 +15,14 @@
         
         .container-background {
             height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-image: url("../assets/images/Backgrounds/background-1.jpg");
+            @include flex-center-center;
+            background-image: url("../assets/images/Backgrounds/background_grey.webp");
             background-position: center top;
             background-repeat: no-repeat;
             background-size: cover;
 
             .container {
-                background-color: white;
+                background-color: map-get($colores, blanco);
                 max-width: 400px;
                 padding: 40px;
                 text-align: center;
@@ -46,7 +44,7 @@
             }
         }
         #h1-new-recipe{
-            color: #2C2C2C;
+            color: map-get($colores, gris);
             text-align: center;
             margin: 5vh;
           }
@@ -57,14 +55,12 @@
             align-items: center;
             padding-top: 60px;
             padding-left: 40vh;
-            color: #2C2C2C;
+            color: map-get($colores, gris);
             margin-bottom: 150px;
 
             .recipes-container {
-                display: flex;
+                @include flex-center-center;
                 flex-wrap: wrap;
-                justify-content: center;
-                justify-items: center;
                 width: 66.66%;
 
                      .recipe-card {
@@ -79,15 +75,13 @@
                             text-decoration: none;
                             font-family: Arial, sans-serif;
                             font-weight: bold;
-                            color: whitesmoke;
+                            color: map-get($colores, blanco);
                           
                                 .recipe-category{
-                                    display: flex;
+                                    @include flex-center-center;
                                     flex-direction: column;
-                                    justify-content: center;
                                     text-align: center;
-                                    justify-items: center;
-                                    background-color: #F96332;
+                                    background-color: map-get($colores, naranja);
                                     text-decoration: none;
                                     margin-bottom: 0px;
                                     height: 40px;
@@ -101,13 +95,11 @@
                                     max-height: 200px;
                                 }
                                 .recipe-name {
-                                    display: flex;
+                                    @include flex-center-center;
                                     flex-direction: column;
-                                    justify-content: center;
                                     text-align: center;
-                                    justify-items: center;
                                     margin-top: 0px;
-                                    background-color: #2C2C2C;
+                                    background-color: map-get($colores, gris);
                                     height: 70px;
                                 }
                             } 

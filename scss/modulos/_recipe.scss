@@ -10,28 +10,24 @@
 
     #main-recipes{
         grid-area: main-recipes;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
+        @include flex-wrap-row;
         margin-top: 120px;
         margin-bottom: 50px;
         
         .recipe-info{
-            background-color:#F96332;
+            background-color:map-get($colores, naranja);
             display: flex;
             margin-bottom: 50px;
             width: 70vw;
             height: 30vh;
 
             #recipe-details{
-                color: #2C2C2C;
+                color: map-get($colores, gris);
                 text-align: center;
-                display: flex;
+                @include flex-center-center;
                 flex: 1;
                 flex-direction: row;
                 flex-wrap: wrap;
-                align-items: center;
-                justify-content: center;
 
             }
             #recipe-image{
@@ -50,14 +46,14 @@
 
             #ingredient-list{
                 flex-basis: 30%;
-                border: #494747;
+                border: map-get($colores, gris);
                 border-style: solid;
-                list-style: none;
+                
                 padding: 10px;
                 margin-bottom: 4vw;
 
                 ul{
-                    list-style: none;
+                    
                     font-size: 1.3rem;
                     padding: 10px;
                 }
@@ -93,17 +89,12 @@
         .recipe-steps{
             flex-direction: column;
             #ingredient-list{
-                display: flex;
+            @include flex-center-center;
                 flex-direction: column;
-                justify-content: center;
-                justify-items: center;
             }
             #instruction-list{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                justify-items: center;
-      
+                @include flex-center-center;
+                flex-direction: column;      
             }
         }                  
     }

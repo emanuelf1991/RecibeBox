@@ -1,0 +1,17 @@
+$colores:(
+    naranja: #F96332,
+    gris: #494747,
+    blanco: whitesmoke,
+);
+
+@mixin flex-center-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-wrap-row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}

@@ -13,9 +13,7 @@
     ;
     .main-recipe-list{
         grid-area: main-recipe-list;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
+        @include flex-wrap-row;
 
         #filters-container{
             flex-basis: 30%;
@@ -51,9 +49,7 @@
             }
 
             #recipes-container-rl{
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
+                @include flex-wrap-row;
                 flex-basis: 70%;
                 margin-bottom: 25vh;
                 margin-top: 9vh;
@@ -76,14 +72,12 @@
                         text-decoration: none;
                         font-family: Arial, sans-serif;
                         font-weight: bold;
-                        color: whitesmoke;
+                        color: map-get($colores, blanco);
                         .recipe-category{
-                            display: flex;
+                            @include flex-center-center;
                             flex-direction: column;
-                            justify-content: center;
                             text-align: center;
-                            justify-items: center;
-                            background-color: #F96332;
+                            background-color: map-get($colores, naranja);
                             text-decoration: none;
                             margin-bottom: 0px;
                             height: 40px;
@@ -98,13 +92,11 @@
                         }
                         .recipe-name{                           
                             margin-top: 10px;
-                            display: flex;
+                            @include flex-center-center;
                             flex-direction: column;
-                            justify-content: center;
                             text-align: center;
-                            justify-items: center;
                             margin-top: 0px;
-                            background-color: #2C2C2C;
+                            background-color: map-get($colores, gris);
                             height: 70px;
                         }    
                     }
@@ -131,10 +123,9 @@
                 flex-wrap: nowrap;
                 
                 .filter-search{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
+                    @include flex-center-center;
+                    flex-direction: column;
+
                     #recipe-name{
                         margin-right: 15vw;
                     }
@@ -156,6 +147,13 @@
         @media (max-width: 768px){
             #recipes-container-rl{
               margin: 0;
+            }
+        }
+
+        @media (max-width: 576px){
+            #recipes-container-rl{
+                flex-direction: column;
+                flex-wrap: nowrap;
             }
         }
     }
