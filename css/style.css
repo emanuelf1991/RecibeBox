@@ -198,7 +198,7 @@ header nav .navbar-collapse {
   height: 30vh;
 }
 #body-recipes #main-recipes .recipe-info #recipe-details {
-  color: #494747;
+  color: whitesmoke;
   text-align: center;
   display: flex;
   align-items: center;
@@ -434,7 +434,13 @@ footer #footer-container {
   background-color: #494747;
 }
 footer .footer-button {
+  background-color: #F96332;
   color: whitesmoke;
+  border: none;
+  transition: background-color 0.2s ease-in-out;
+}
+footer .footer-button:hover {
+  background-color: #af3a0c; /* Set a darker shade of orange */
 }
 footer #footer-copyright {
   background-color: rgba(0, 0, 0, 0.2);

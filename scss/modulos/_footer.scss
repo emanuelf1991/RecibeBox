@@ -9,7 +9,13 @@ footer {
     }
   
     .footer-button {
-      color: whitesmoke;
+      background-color: map-get($colores, naranja);
+      color: map-get($colores, blanco);
+      border: none; 
+      transition: background-color 0.2s ease-in-out;
+        &:hover{
+          background-color: map-get($colores, naranja_oscuro); /* Set a darker shade of orange */
+         }
     }
   
     #footer-copyright {

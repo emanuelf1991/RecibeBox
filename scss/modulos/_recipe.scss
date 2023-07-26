@@ -22,7 +22,7 @@
             height: 30vh;
 
             #recipe-details{
-                color: map-get($colores, gris);
+                color: map-get($colores, blanco);
                 text-align: center;
                 @include flex-center-center;
                 flex: 1;
