@@ -84,6 +84,7 @@
           .recipe-info{
             width: 100vw;
             height: 30vh;
+            margin-left: 15vw;
         }
   
         .recipe-steps{
@@ -100,10 +101,6 @@
     }
     
     @media (max-width: 576px){
-
-        .recipe-info{
-        margin-left: 15vw;
-        }
 
         #recipe-details{
           font-size: 0.9rem;

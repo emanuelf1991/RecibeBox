@@ -4,11 +4,10 @@ header {
     nav {
         background-color: map-get($colores, naranja); 
         height: 73px;
-       
-
+        z-index: 9999 !important;
         .navbar-collapse {
             background-color: map-get($colores, naranja); 
-            
         }
+        
     }
 }
