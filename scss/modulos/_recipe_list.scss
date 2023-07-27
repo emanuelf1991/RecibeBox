@@ -151,11 +151,10 @@
         }
 
         @media (max-width: 576px){
-            #recipes-container-rl{
-                flex-direction: column;
-                flex-wrap: nowrap;
-            }
+            .recipe-card-rl{
+            width: calc(100% - 20px) !important;
         }
     }
+}
 
 

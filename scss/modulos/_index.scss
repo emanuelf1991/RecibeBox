@@ -6,12 +6,12 @@
     grid-template-rows: 0.2fr 3fr 3fr 0.5fr;
     grid-template-areas:
     "header header header"
-    "main main main"
-    "main main main"
+    "main-index main-index main-index"
+    "main-index main-index main-index"
     "footer footer footer"
     ;
     .main-index{
-        grid-area: main;
+        grid-area: main-index;
         
         .container-background {
             height: 100vh;
@@ -49,19 +49,15 @@
             margin: 5vh;
           }
           .container-new-recipes{
-            grid-area: container-new-recipes;
             display: flex;
             flex-direction: row;
-            align-items: center;
-            padding-top: 60px;
-            padding-left: 40vh;
             color: map-get($colores, gris);
-            margin-bottom: 150px;
+            justify-content: center;
 
             .recipes-container {
                 @include flex-center-center;
                 flex-wrap: wrap;
-                width: 66.66%;
+                flex-basis: 70%;
 
                      .recipe-card {
                         width: calc(50% - 20px);
@@ -108,50 +104,25 @@
                 }
 
             }
+            @media (max-width: 1200px){
 
-
-            @media (max-width: 992px){
-               
-                  display: grid;
+                    
+                  display: grid;           
                   grid-template-columns: 1fr;
                   grid-template-rows: 0.2fr 3fr 3fr 0.5fr;
                   grid-template-areas:
                   "header"
-                  "main"
-                  "main"
+                  "main-index"
+                  "main-index"
                   "footer"
                   ;
-
-                  .recipes-container {
-                    display: flex;
-                    flex-direction: row;
-                    flex-wrap: wrap;
-                    width: 1000px;        
-                    position: relative;
-                    left: -160px;
+          
             
-                  }
-                  .recipe-card {
-                    width: calc(50% - 20px);
-                    margin: 10px;
-                    box-sizing: border-box;
-                    justify-content: center;
-                    justify-items: center;
-            }
+        }
+        @media (max-width: 576px){
+            .recipe-card{
+            width: calc(100% - 20px) !important;
         }
             
-                 
-                   
-              
-            
+        }
     }
-
-        
-        
-    
-
-
-//   /* index media querys */
-
-
-  /*------------------------------*/

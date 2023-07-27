@@ -43,13 +43,13 @@
         }
         .recipe-steps{
             display: flex;
-
+            
             #ingredient-list{
                 flex-basis: 30%;
                 border: map-get($colores, gris);
                 border-style: solid;
                 
-                padding: 10px;
+                padding: 20px;
                 margin-bottom: 4vw;
 
                 ul{
@@ -99,7 +99,11 @@
         }                  
     }
     
-    @media (max-width: 480px){
+    @media (max-width: 576px){
+
+        .recipe-info{
+        margin-left: 15vw;
+        }
 
         #recipe-details{
           font-size: 0.9rem;
