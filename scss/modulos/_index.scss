@@ -124,5 +124,10 @@
             width: calc(100% - 20px) !important;
         }
             
-        }
     }
+}
+
+html.dark-mode 
+{     
+    @include dark-theme-index;    
+}

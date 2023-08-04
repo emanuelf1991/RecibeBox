@@ -12,7 +12,20 @@
     {
         grid-area: main-contact;
         margin-top: 15vh;
+        }        
+        .map-container
+        {
+        @include flex-wrap-row;
+        justify-content: center;
+        margin-top: 7vh;
+            iframe{
+                width:100%;
+            }            
         }
+
     }
 
- 
+html.dark-mode 
+{     
+    @include dark-theme-contact;    
+}

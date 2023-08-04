@@ -11,8 +11,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <title>Contacto - ¡Contáctanos para cualquier consulta o sugerencia sobre nuestras recetas!</title>
     <meta name="description" content="¿Tienes alguna pregunta, sugerencia o simplemente quieres decir hola? ¡Estamos encantados de escucharte! Contacta con nuestro equipo en RecipeBox y estaremos encantados de ayudarte en todo lo que necesites.">
-</head>
-</head> 
+  </head>
 
     <body class="body-contact">
       <header>
@@ -36,7 +35,12 @@
                   <a class="nav-link fs-5 text-white" href="./contact.html">Contacto</a>
                 </li>
                 <li class="nav-item dropdown">
-              </ul>
+              </ul>              
+              <div id="switch-nav" class="form-check form-switch">
+                <i class="bi bi-moon-fill"></i>
+                <input class="form-check-input" type="checkbox" role="switch" id="swithc-dark-theme" onclick="document.documentElement.classList.toggle('dark-mode')">
+                <i id="sun-icon" class="bi bi-sun-fill"></i>
+              </div>
               <form class="d-flex" role="search">
                 <div class="row no-gutters mt-3 align-items-center">
                   <div class="col d-flex align-items-center">
@@ -58,7 +62,7 @@
         <div class="content">
         <div class="contact-container">
           <h1 class="p-4 ">Contactanos</h1>
-          <form>
+          <form> 
             <div class="form-group pb-4">
               <label for="nombre">Nombre:</label>
               <input type="text" id="nombre" name="nombre" required class="form-control">
@@ -75,8 +79,11 @@
               <label for="mensaje">Su mensaje:</label>
               <textarea id="mensaje" name="mensaje" rows="4" required class="form-control"></textarea>
             </div>
-            <button class="btn btn-dark" type="submit" >Enviar Mensaje</button>
+            <button class="btn btn-dark send-button" type="submit" >Enviar Mensaje</button>
           </form>
+        </div>
+          <div class="map-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d8097.648548843067!2d-64.18166834711398!3d-31.42399320360699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1690928769914!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </main>

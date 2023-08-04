@@ -16,3 +16,153 @@ $colores:(
     flex-wrap: wrap;
     flex-direction: row;
 }
+
+// Estilos generales de la página
+$background-color-light: whitesmoke;
+$text-color-light: black;
+$background-color-dark: #282B28;
+$text-color-dark: whitesmoke;
+$background-color-dark-nav: #A24936;
+$background-color-dark-footer-button: #7e3828;
+$background-color-dark-footer: #3E5641;
+
+
+@mixin dark-theme-contact {
+  .body-contact{
+    background-color: $background-color-dark;
+    color: $text-color-dark;
+      .send-button{
+        background-color:$background-color-dark-nav;
+      }
+  }
+}
+
+@mixin dark-theme-index {
+ .body-index {
+  background-color: $background-color-dark;
+  color: $text-color-dark;
+  .main-index{
+      
+      .container-background {
+        background-image: url("../assets/images/Backgrounds/dark-background.webp");
+          .container {
+              background-color: $background-color-dark-nav;
+              .title {
+                color: $text-color-dark;
+              }
+                .description {
+                  color: $text-color-dark;
+              }
+          }
+      }
+      #h1-new-recipe{
+          color: $text-color-dark;
+        }
+        .container-new-recipes{
+          color: $text-color-dark;
+          .recipes-container {
+                   .recipe-card {
+                      .recipe-link{
+                          color: $text-color-dark;                        
+                              .recipe-category{
+                                  background-color:$background-color-dark-nav;
+                              }
+                              .recipe-name {
+                                background-color: $background-color-dark-footer;
+
+                            }
+                          } 
+                      }
+                  }
+              }
+
+          }
+        }
+}
+
+@mixin dark-theme-about {
+  .body-about{
+    background-color: $background-color-dark;
+    color: $text-color-dark;      
+  }
+}
+
+@mixin dark-theme-recipe {
+  #body-recipes{
+    background-color: $background-color-dark;
+    color: $text-color-dark;  
+    #main-recipes{       
+        .recipe-info{
+            background-color: $background-color-dark-nav;
+            #recipe-details{
+              color: $text-color-dark;
+            }
+          }
+        .recipe-steps{
+            display: flex;
+            
+            #ingredient-list{
+                border: $background-color-dark-footer;
+                ul{                   
+                  color: $text-color-dark;
+                }
+            }
+            #instruction-list{
+                ol{
+                  color: $text-color-dark;
+                }
+            }
+          
+        }
+    }
+  }
+}
+
+@mixin dark-theme-recipe-list {
+  .body-recipe-list{
+    background-color: $background-color-dark;
+    color: $text-color-dark; 
+    .main-recipe-list{
+      #recipes-container-rl{
+                .recipe-card-rl {
+                    .recipe-link{                    
+                      color: $text-color-dark;
+                        .recipe-category{
+                          background-color: $background-color-dark-nav;
+                        }
+                        .recipe-name{                           
+                          background-color: $background-color-dark-footer;
+                      }    
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@mixin dark-theme-nav {
+  nav {
+    background-color: $background-color-dark-nav; 
+
+    .navbar-collapse {
+        background-color: $background-color-dark-nav; 
+    } 
+  }
+}
+
+@mixin dark-theme-footer {
+    footer{
+      background-color: $background-color-dark-footer;
+      #footer-container{
+        background-color: $background-color-dark-footer;
+        .footer-button{
+          background-color: $background-color-dark-nav;
+          color: $text-color-dark;
+          &:hover{
+            background-color: $background-color-dark-footer-button;
+          }
+        }
+      }
+     }
+  }

@@ -122,9 +122,11 @@
 
     }
 }
-
-   
-
+  
+html.dark-mode 
+{       
+@include dark-theme-recipe;   
+}
    
    
    

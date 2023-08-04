@@ -115,6 +115,38 @@
   }
 }
 
+html.dark-mode .body-index {
+  background-color: #282B28;
+  color: whitesmoke;
+}
+html.dark-mode .body-index .main-index .container-background {
+  background-image: url("../assets/images/Backgrounds/dark-background.webp");
+}
+html.dark-mode .body-index .main-index .container-background .container {
+  background-color: #A24936;
+}
+html.dark-mode .body-index .main-index .container-background .container .title {
+  color: whitesmoke;
+}
+html.dark-mode .body-index .main-index .container-background .container .description {
+  color: whitesmoke;
+}
+html.dark-mode .body-index .main-index #h1-new-recipe {
+  color: whitesmoke;
+}
+html.dark-mode .body-index .main-index .container-new-recipes {
+  color: whitesmoke;
+}
+html.dark-mode .body-index .main-index .container-new-recipes .recipes-container .recipe-card .recipe-link {
+  color: whitesmoke;
+}
+html.dark-mode .body-index .main-index .container-new-recipes .recipes-container .recipe-card .recipe-link .recipe-category {
+  background-color: #A24936;
+}
+html.dark-mode .body-index .main-index .container-new-recipes .recipes-container .recipe-card .recipe-link .recipe-name {
+  background-color: #3E5641;
+}
+
 header {
   grid-area: header;
 }
@@ -126,6 +158,28 @@ header nav {
 header nav .navbar-collapse {
   background-color: #F96332;
 }
+header nav #switch-nav {
+  color: white;
+}
+header nav #switch-nav #sun-icon {
+  position: relative;
+  right: 84px;
+}
+header nav #switch-nav #swithc-dark-theme {
+  color: black;
+}
+header nav #search-nav {
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+}
+
+html.dark-mode nav {
+  background-color: #A24936;
+}
+html.dark-mode nav .navbar-collapse {
+  background-color: #A24936;
+}
 
 .body-contact {
   display: grid;
@@ -136,6 +190,24 @@ header nav .navbar-collapse {
 .body-contact .main-contact {
   grid-area: main-contact;
   margin-top: 15vh;
+}
+.body-contact .map-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 7vh;
+}
+.body-contact .map-container iframe {
+  width: 100%;
+}
+
+html.dark-mode .body-contact {
+  background-color: #282B28;
+  color: whitesmoke;
+}
+html.dark-mode .body-contact .send-button {
+  background-color: #A24936;
 }
 
 .body-about {
@@ -160,6 +232,11 @@ header nav .navbar-collapse {
   .body-about .main-about {
     margin: 10vw;
   }
+}
+
+html.dark-mode .body-about {
+  background-color: #282B28;
+  color: whitesmoke;
 }
 
 #body-recipes {
@@ -268,6 +345,29 @@ header nav .navbar-collapse {
   #body-recipes #ingredient-list ul {
     font-size: 1rem;
   }
+}
+
+html.dark-mode #body-recipes {
+  background-color: #282B28;
+  color: whitesmoke;
+}
+html.dark-mode #body-recipes #main-recipes .recipe-info {
+  background-color: #A24936;
+}
+html.dark-mode #body-recipes #main-recipes .recipe-info #recipe-details {
+  color: whitesmoke;
+}
+html.dark-mode #body-recipes #main-recipes .recipe-steps {
+  display: flex;
+}
+html.dark-mode #body-recipes #main-recipes .recipe-steps #ingredient-list {
+  border: #3E5641;
+}
+html.dark-mode #body-recipes #main-recipes .recipe-steps #ingredient-list ul {
+  color: whitesmoke;
+}
+html.dark-mode #body-recipes #main-recipes .recipe-steps #instruction-list ol {
+  color: whitesmoke;
 }
 
 /* recipe-list css */
@@ -412,6 +512,20 @@ header nav .navbar-collapse {
   }
 }
 
+html.dark-mode .body-recipe-list {
+  background-color: #282B28;
+  color: whitesmoke;
+}
+html.dark-mode .body-recipe-list .main-recipe-list #recipes-container-rl .recipe-card-rl .recipe-link {
+  color: whitesmoke;
+}
+html.dark-mode .body-recipe-list .main-recipe-list #recipes-container-rl .recipe-card-rl .recipe-link .recipe-category {
+  background-color: #A24936;
+}
+html.dark-mode .body-recipe-list .main-recipe-list #recipes-container-rl .recipe-card-rl .recipe-link .recipe-name {
+  background-color: #3E5641;
+}
+
 footer {
   grid-area: footer;
   background-color: #494747;
@@ -426,10 +540,24 @@ footer .footer-button {
   transition: background-color 0.2s ease-in-out;
 }
 footer .footer-button:hover {
-  background-color: #af3a0c; /* Set a darker shade of orange */
+  background-color: #af3a0c;
 }
 footer #footer-copyright {
   background-color: rgba(0, 0, 0, 0.2);
+}
+
+html.dark-mode footer {
+  background-color: #3E5641;
+}
+html.dark-mode footer #footer-container {
+  background-color: #3E5641;
+}
+html.dark-mode footer #footer-container .footer-button {
+  background-color: #A24936;
+  color: whitesmoke;
+}
+html.dark-mode footer #footer-container .footer-button:hover {
+  background-color: #7e3828;
 }
 
 /*# sourceMappingURL=style.css.map */

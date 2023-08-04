@@ -8,6 +8,24 @@ header {
         .navbar-collapse {
             background-color: map-get($colores, naranja); 
         }
-        
+        #switch-nav{
+            color: white;
+            #sun-icon{
+                position: relative;
+                right: 84px;
+            }
+            #swithc-dark-theme{
+                color: black;
+            }
+        }
+        #search-nav{
+            display: flex;
+            justify-content: center;
+            justify-self: center;
+        }        
     }
+}
+html.dark-mode 
+{
+@include dark-theme-nav;
 }

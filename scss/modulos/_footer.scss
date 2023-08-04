@@ -14,11 +14,18 @@ footer {
       border: none; 
       transition: background-color 0.2s ease-in-out;
         &:hover{
-          background-color: map-get($colores, naranja_oscuro); /* Set a darker shade of orange */
+          background-color: map-get($colores, naranja_oscuro);
          }
     }
   
     #footer-copyright {
       background-color: rgba(0, 0, 0, 0.2);
     }
+
+
   }
+
+html.dark-mode 
+{
+@include dark-theme-footer;
+}
