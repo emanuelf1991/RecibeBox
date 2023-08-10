@@ -9,6 +9,10 @@ header {
             background-color: map-get($colores, naranja);
             padding: 5px; 
         }
+        #rounded-search-input{
+            position: relative;
+            bottom: 9px;
+        }
         #switch-nav{
             color:map-get($colores, blanco);
             #sun-icon{

@@ -1,0 +1,161 @@
+@mixin flex-center-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-wrap-row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+@mixin dark-theme-contact {
+    .body-contact{
+      background-color: $dark-theme-grey;
+      color: $dark-theme-white;
+        .send-button{
+          background-color:$dark-theme-orange;
+        }
+    }
+  }
+  
+  @mixin dark-theme-index {
+   .body-index {
+    background-color: $dark-theme-grey;
+    color: $dark-theme-white;
+    .main-index{
+        
+        .container-background {
+          background-image: url("../assets/images/Backgrounds/dark-background.webp");
+            .container {
+                background-color: $dark-theme-orange;
+                .title {
+                  color: $dark-theme-white;
+                }
+                  .description {
+                    color: $dark-theme-white;
+                }
+            }
+        }
+        #h1-new-recipe{
+            color: $dark-theme-white;
+          }
+          .container-new-recipes{
+            color: $dark-theme-white;
+            .recipes-container {
+                     .recipe-card {
+                        .recipe-link{
+                            color: $dark-theme-white;                        
+                                .recipe-category{
+                                    background-color:$dark-theme-orange;
+                                }
+                                .recipe-name {
+                                  background-color: $dark-theme-olive;
+  
+                              }
+                            } 
+                        }
+                    }
+                }
+  
+            }
+          }
+  }
+  
+  @mixin dark-theme-about {
+    .body-about{
+      background-color: $dark-theme-grey;
+      color: $dark-theme-white;      
+    }
+  }
+  
+  @mixin dark-theme-recipe {
+    #body-recipes{
+      background-color: $dark-theme-grey;
+      color: $dark-theme-white;  
+      #main-recipes{       
+          .recipe-info{
+              background-color: $dark-theme-orange;
+              #recipe-details{
+                color: $dark-theme-white;
+              }
+            }
+          .recipe-steps{
+              display: flex;
+              
+              #ingredient-list{
+                  border-color: $dark-theme-orange;
+                  ul{                   
+                    color: $dark-theme-white;
+                  }
+              }
+              #instruction-list{
+                  ol{
+                    color: $dark-theme-white;
+                  }
+              }
+            
+          }
+      }
+    }
+  }
+  
+  @mixin dark-theme-recipe-list {
+    .body-recipe-list{
+      background-color: $dark-theme-grey;
+      color: $dark-theme-white; 
+      .main-recipe-list{
+        #checkbox-recipe-list{
+          .btn-check:checked + .btn {
+            border-color: $dark-theme-olive;
+            color: $dark-theme-white;
+          }
+          .btn-check:not(:checked) + .btn {
+            border-color: $dark-theme-orange;
+            color: $dark-theme-white;
+          }
+        }
+        #recipes-container-rl{
+                  .recipe-card-rl {
+                      .recipe-link{                    
+                        color: $dark-theme-white;
+                          .recipe-category{
+                            background-color: $dark-theme-orange;
+                          }
+                          .recipe-name{                           
+                            background-color: $dark-theme-olive;
+                        }    
+                      }
+                  }
+              }
+  
+          }
+      }
+  }
+  
+  @mixin dark-theme-nav {
+    nav {
+      background-color: $dark-theme-orange; 
+  
+      .navbar-collapse {
+          background-color: $dark-theme-orange; 
+      } 
+    }
+  }
+  
+  @mixin dark-theme-footer {
+      footer{
+        background-color: $dark-theme-olive;
+        #footer-container{
+          background-color: $dark-theme-olive;
+          .footer-button{
+            background-color: $dark-theme-orange;
+            color: $dark-theme-white;
+            &:hover{
+              background-color: $dark-theme-dark-orange;
+            }
+          }
+        }
+       }
+    }

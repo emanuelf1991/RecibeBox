@@ -1,10 +1,12 @@
-@import "modulos/utilidades";
-@import "modulos/index";
-@import "modulos/navbar";
-@import "modulos/contact";
-@import "modulos/about";
-@import "modulos/recipe";
-@import "modulos/recipe_list";
-@import "modulos/footer";
+@import "base/reset";
+@import "utilities/variables";
+@import "utilities/mixins";
+@import "pages/index";
+@import "layout/navbar";
+@import "pages/contact";
+@import "pages/about";
+@import "pages/recipe";
+@import "pages/recipe_list";
+@import "layout/footer";
 
 
