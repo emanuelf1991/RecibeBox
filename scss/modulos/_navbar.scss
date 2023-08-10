@@ -6,16 +6,17 @@ header {
         height: 73px;
         z-index: 9999 !important;
         .navbar-collapse {
-            background-color: map-get($colores, naranja); 
+            background-color: map-get($colores, naranja);
+            padding: 5px; 
         }
         #switch-nav{
-            color: white;
+            color:map-get($colores, blanco);
             #sun-icon{
                 position: relative;
                 right: 84px;
             }
             #swithc-dark-theme{
-                color: black;
+                color: map-get($colores, negro);
             }
         }
         #search-nav{
@@ -23,6 +24,16 @@ header {
             justify-content: center;
             justify-self: center;
         }        
+    }
+    @media (max-width: 992px){
+        #switch-nav{
+            position: relative;
+            left: 25px;
+            #sun-icon{
+                position: relative;
+                right: 84px;
+            }
+        }
     }
 }
 html.dark-mode 

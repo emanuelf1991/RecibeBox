@@ -3,6 +3,7 @@ $colores:(
     gris: #494747,
     blanco: whitesmoke,
     naranja_oscuro: #af3a0c,
+    negro: black,
 );
 
 @mixin flex-center-center {
@@ -102,7 +103,7 @@ $background-color-dark-footer: #3E5641;
             display: flex;
             
             #ingredient-list{
-                border: $background-color-dark-footer;
+                border-color: $background-color-dark-nav;
                 ul{                   
                   color: $text-color-dark;
                 }
@@ -123,6 +124,16 @@ $background-color-dark-footer: #3E5641;
     background-color: $background-color-dark;
     color: $text-color-dark; 
     .main-recipe-list{
+      #checkbox-recipe-list{
+        .btn-check:checked + .btn {
+          border-color: $background-color-dark-footer;
+          color: $text-color-dark;
+        }
+        .btn-check:not(:checked) + .btn {
+          border-color: $background-color-dark-nav;
+          color: $text-color-dark;
+        }
+      }
       #recipes-container-rl{
                 .recipe-card-rl {
                     .recipe-link{                    

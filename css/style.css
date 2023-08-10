@@ -157,9 +157,10 @@ header nav {
 }
 header nav .navbar-collapse {
   background-color: #F96332;
+  padding: 5px;
 }
 header nav #switch-nav {
-  color: white;
+  color: whitesmoke;
 }
 header nav #switch-nav #sun-icon {
   position: relative;
@@ -172,6 +173,16 @@ header nav #search-nav {
   display: flex;
   justify-content: center;
   justify-self: center;
+}
+@media (max-width: 992px) {
+  header #switch-nav {
+    position: relative;
+    left: 25px;
+  }
+  header #switch-nav #sun-icon {
+    position: relative;
+    right: 84px;
+  }
 }
 
 html.dark-mode nav {
@@ -361,7 +372,7 @@ html.dark-mode #body-recipes #main-recipes .recipe-steps {
   display: flex;
 }
 html.dark-mode #body-recipes #main-recipes .recipe-steps #ingredient-list {
-  border: #3E5641;
+  border-color: #A24936;
 }
 html.dark-mode #body-recipes #main-recipes .recipe-steps #ingredient-list ul {
   color: whitesmoke;
@@ -514,6 +525,14 @@ html.dark-mode #body-recipes #main-recipes .recipe-steps #instruction-list ol {
 
 html.dark-mode .body-recipe-list {
   background-color: #282B28;
+  color: whitesmoke;
+}
+html.dark-mode .body-recipe-list .main-recipe-list #checkbox-recipe-list .btn-check:checked + .btn {
+  border-color: #3E5641;
+  color: whitesmoke;
+}
+html.dark-mode .body-recipe-list .main-recipe-list #checkbox-recipe-list .btn-check:not(:checked) + .btn {
+  border-color: #A24936;
   color: whitesmoke;
 }
 html.dark-mode .body-recipe-list .main-recipe-list #recipes-container-rl .recipe-card-rl .recipe-link {
