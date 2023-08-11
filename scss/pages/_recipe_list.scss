@@ -21,7 +21,10 @@
 
             .filter-search{
                 padding-left: 7rem;
-                margin-top: 2rem;
+                 margin-top: 2rem;
+                .intro-text{
+                    @include flex-center-center
+                }
             }
             .filter{
                 padding-left: 7rem;
@@ -140,8 +143,6 @@
                         margin: 8vw;
                     }
             }
-            
-
         }
 
         @media (max-width: 768px){

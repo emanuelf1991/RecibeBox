@@ -432,6 +432,11 @@ html.dark-mode #body-recipes #main-recipes .recipe-steps #instruction-list ol {
   padding-left: 7rem;
   margin-top: 2rem;
 }
+.body-recipe-list .main-recipe-list #filters-container .filter-search .intro-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .body-recipe-list .main-recipe-list #filters-container .filter {
   padding-left: 7rem;
   margin-top: 2rem;
