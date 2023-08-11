@@ -1,35 +1,43 @@
-README
-RecipeBox
+**README - RecipeBox**
 
-Descripción
-Esta es la tercera versión de la aplicación web desarrollada para el curso de HTML, CSS y Bootstrap. 
-En esta versión, se aplicó SASS, lo que implicó el uso de mixins y maps para mejorar la organización y eficiencia del código. 
-Además, se corrigieron errores en el HTML, se agregaron animaciones para mejorar la experiencia del usuario y se implementaron conceptos de SEO para optimizar la visibilidad en los motores de búsqueda.
-También se trabajó en la vista responsive de la aplicación para que pueda adaptarse correctamente a diferentes dispositivos y tamaños de pantalla.
+## Descripción
 
-Novedades y Características
-Uso de SASS con mixins y maps para una estructura de estilos más modular y mantenible.
-Corrección de errores en el HTML para mejorar la semántica y accesibilidad del sitio.
-Incorporación de animaciones para hacer la interacción más atractiva y agradable.
-Implementación de conceptos de SEO para mejorar la visibilidad del sitio en buscadores.
-Mejoras en la vista responsive para una experiencia óptima en dispositivos móviles y distintos tamaños de pantalla.
+RecipeBox es una aplicación web en constante evolución que te permite almacenar y descubrir tus recetas favoritas de manera fácil y eficiente. Desarrollada como parte del curso de HTML, CSS y Bootstrap. En esta iteración, hemos implementado mejoras significativas en la organización del código, la experiencia del usuario y la optimización para motores de búsqueda.
 
-Tecnologías utilizadas
-HTML
-CSS
-Bootstrap
-SASS
+## Novedades y Características
 
-Notas de la versión
-Versión 3.0
-Se agrego SASS, animaciones, mixings y maps. Se corrigieron detalles del html y del responsive.
-Versión 2.0
-Se estructuro el css de la aplicaion utilizando gridd para darle la estructura principal, flex para acomodar los elementos y algunos detalles se finalizaron con bootstrap.
-Inclucion de responsive en la pagina.
-Versión 1.0
-Maquetado del proyecto. Se creo un html basico con su css.
-Autor
+- **Modo Oscuro:** En la versión 4.0, hemos introducido el muy esperado modo oscuro para brindar a los usuarios una experiencia visual más cómoda durante la noche o en condiciones de poca luz.
+- **SASS Modular:** Utilizamos SASS para estructurar nuestros estilos de manera modular y mantenible. Empleamos mixins y maps para simplificar la definición de estilos y reducir la repetición de código.
+- **HTML Mejorado:** Hemos corregido detalles en el HTML para mejorar la semántica y la accesibilidad del sitio, lo que resulta en una mejor experiencia para todos los usuarios, incluidos aquellos que utilizan tecnologías de asistencia.
+- **Animaciones Atractivas:** Agregamos animaciones cuidadosamente diseñadas para hacer que la interacción del usuario sea más atractiva y agradable, lo que contribuye a una experiencia de navegación más dinámica.
+- **Optimización SEO:** Implementamos conceptos de SEO para mejorar la visibilidad del sitio en los motores de búsqueda, asegurando que las recetas sean más fáciles de encontrar para aquellos que buscan inspiración culinaria en línea.
+- **Vista Responsive Mejorada:** Trabajamos en la vista responsive de la aplicación para garantizar que funcione y se vea perfectamente en una variedad de dispositivos y tamaños de pantalla, ofreciendo una experiencia consistente para todos los usuarios.
+
+## Tecnologías utilizadas
+
+- HTML
+- CSS
+- Bootstrap
+- SASS
+
+## Directorio SASS
+
+- **base:** Contiene el modulo _reset.
+- **pages:** Aquí se encuentran los estilos específicos de las paginas de la aplicación.
+- **layouts:** Define los estilos para la estructura general del sitio, como la disposición de encabezados, navegación y el footer.
+- **utilities:** Contiene mixins y variables SASS reutilizables en todo el proyecto.
+- **style.scss:** Archivo principal que importa todos los archivos SASS y los compila en un solo archivo CSS.
+
+## Notas de la versión
+
+- **Versión 4.0:** Agregamos el modo oscuro para una experiencia de usuario más cómoda en condiciones de poca luz.
+- **Versión 3.0:** Introducción de SASS, animaciones, mixins y maps. Correcciones en HTML y mejoras en la vista responsive.
+- **Versión 2.0:** Estructura CSS utilizando grid y flex para la maquetación principal. Se incluyó el responsive en la página.
+- **Versión 1.0:** Maquetado inicial del proyecto con HTML y CSS básicos.
+
+## Autor
+
 Emanuel Fernández
 
-
+¡Gracias por elegir RecipeBox! Estamos comprometidos a seguir mejorando y brindándote una experiencia culinaria en línea excepcional. Si tienes alguna pregunta o sugerencia, no dudes en contactarnos. ¡Disfruta explorando y compartiendo tus recetas favoritas!
 
